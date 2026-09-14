@@ -2,19 +2,20 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-
-# Virtual env
-venv/
 .venv/
+venv/
 env/
 
-# Data (тяжёлые файлы — не коммитим raw данные)
+# Data (сырые данные не коммитим — они воспроизводимы через data_loader.py)
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*.csv
+!data/processed/.gitkeep
 
-# OS
+# OS / IDE
 .DS_Store
+.vscode/
+.idea/
 
-# Jupyter
-.ipynb_checkpoints
+# Env vars (например, FRED API key)
+.env

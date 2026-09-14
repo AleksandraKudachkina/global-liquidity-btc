@@ -6,5 +6,5 @@ statsmodels
 scikit-learn
 yfinance
 fredapi
-requests
+python-dotenv
 jupyter
